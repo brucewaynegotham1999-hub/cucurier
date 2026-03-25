@@ -46,8 +46,8 @@ function App() {
           <Route path="/track/:trackingNumber" element={<PackageDetailsPage />} />
 
           {/* Admin Section */}
-          <Route path="/kirikuadminman/login" element={<AdminLogin />} />
-          <Route path="/kirikuadminman/dashboard" element={<AdminDashboard />} />
+          <Route path="/kirikuadminmanlogin" element={<AdminLogin />} />
+          <Route path="/kirikuadminmandashboard" element={<AdminDashboard />} />
 
           {/* Static Pages */}
           <Route path="/about" element={<Static.AboutUs />} />
