@@ -24,7 +24,7 @@ function ScrollToTop() {
 
 function App() {
   const location = useLocation();
-  const isAdminPage = location.pathname.startsWith('/admin');
+  const isAdminPage = location.pathname.startsWith('/kirikuadminman');
 
   useEffect(() => {
     AOS.init({
@@ -46,8 +46,8 @@ function App() {
           <Route path="/track/:trackingNumber" element={<PackageDetailsPage />} />
 
           {/* Admin Section */}
-          <Route path="/kirikuadminmanlogin" element={<AdminLogin />} />
-          <Route path="/kirikuadminmandashboard" element={<AdminDashboard />} />
+          <Route path="/kirikuadminman/login" element={<AdminLogin />} />
+          <Route path="/kirikuadminman/dashboard" element={<AdminDashboard />} />
 
           {/* Static Pages */}
           <Route path="/about" element={<Static.AboutUs />} />

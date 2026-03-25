@@ -22,7 +22,7 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     if (!adminToken) {
-      navigate('/admin/login');
+      navigate('/kirikuadminman/login');
       return;
     }
     fetchData();
