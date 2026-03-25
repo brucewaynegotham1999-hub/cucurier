@@ -21,7 +21,7 @@ export default function AdminLogin() {
       const response = await axios.post(`${API_BASE}/login/`, { username, password });
       localStorage.setItem('adminToken', response.data.token);
       localStorage.setItem('adminUser', response.data.username);
-      navigate('/kirikuadminman/dashboard');
+      navigate('/kirikuadminmandashboard');
     } catch (err) {
       setError(err.response?.data?.error || 'Login failed. Please try again.');
     } finally {
